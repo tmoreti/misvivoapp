@@ -29,6 +29,7 @@
     <vs:features>
         <vs:feature>onesignal-cordova-plugin</vs:feature>
     </vs:features>
+    <gap:plugin name="onesignal-cordova-plugin" source="npm" spec="^2.0.10" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

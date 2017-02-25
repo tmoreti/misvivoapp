@@ -12,7 +12,7 @@
         <vs:feature>onesignal-cordova-plugin</vs:feature>
     </vs:features>
     <plugin name="cordova-plugin-whitelist" spec="1" />
-    <plugin name="onesignal-cordova-plugin" />
+    <gap:plugin name="onesignal-cordova-plugin" spec="^2.0.10" source="npm" />
 
     <access origin="*" />
     <allow-intent href="http://*/*" />

@@ -40,16 +40,20 @@
             document.addEventListener('deviceready', function () {
               // Enable to debug issues.
               // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
-              
+              var iosSettings = {};
+iosSettings["kOSSettingsKeyAutoPrompt"] = true;
+iosSettings["kOSSettingsKeyInAppLaunchURL"] = false;
               var notificationOpenedCallback = function(jsonData) {
-                console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+                alert('notificationOpenedCallback: ' + JSON.stringify(jsonData));
               };
 
               window.plugins.OneSignal
                 .startInit("5730a0aa-9d1f-4dc4-a962-ec277cca4ef9")
                 .handleNotificationOpened(notificationOpenedCallback)
+                .iOSSettings(iosSettings)
                 .endInit();
-                
+
+                window.plugins.OneSignal.registerForPushNotifications();
               window.plugins.OneSignal.setLogLevel({logLevel: 6, visualLevel: 4});
               // Call syncHashedEmail anywhere in your app if you have the user's email.
               // This improves the effectiveness of OneSignal's "best-time" notification scheduling feature.
