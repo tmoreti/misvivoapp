@@ -40,17 +40,14 @@
             document.addEventListener('deviceready', function () {
               // Enable to debug issues.
               // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
-              var iosSettings = {};
-iosSettings["kOSSettingsKeyAutoPrompt"] = true;
-iosSettings["kOSSettingsKeyInAppLaunchURL"] = false;
+              
               var notificationOpenedCallback = function(jsonData) {
                 alert('notificationOpenedCallback: ' + JSON.stringify(jsonData));
               };
 
               window.plugins.OneSignal
-                .startInit("5730a0aa-9d1f-4dc4-a962-ec277cca4ef9")
+                .startInit("d0f05d09-264b-4a17-8c72-f517191b01cb")
                 .handleNotificationOpened(notificationOpenedCallback)
-                .iOSSettings(iosSettings)
                 .endInit();
 
                 window.plugins.OneSignal.registerForPushNotifications();
