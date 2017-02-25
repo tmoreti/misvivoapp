@@ -1,0 +1,18 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "onesignal-cordova-plugin": {
+            "PACKAGE_NAME": "br.com.misvivoapp"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "br.com.misvivoapp"
+        }
+    },
+    "dependent_plugins": {}
+}
