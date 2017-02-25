@@ -26,6 +26,9 @@
         Apache Cordova Team
     </author>
     <content src="index.html" />
+    <vs:features>
+        <vs:feature>onesignal-cordova-plugin</vs:feature>
+    </vs:features>
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

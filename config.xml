@@ -8,7 +8,9 @@
         Apache Cordova Team
     </author>
     <content src="index.html" />
-    <plugin name="onesignal-cordova-plugin" spec="^2.0.10" source="npm"/>
+    <vs:features>
+        <vs:feature>onesignal-cordova-plugin</vs:feature>
+    </vs:features>
     <plugin name="cordova-plugin-whitelist" spec="1" />
 
     <access origin="*" />
