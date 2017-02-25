@@ -46,10 +46,11 @@
               };
 
               window.plugins.OneSignal
-                .startInit("fd41e0c4-78f5-4440-ac3a-6fb8e508c28e")
+                .startInit("5730a0aa-9d1f-4dc4-a962-ec277cca4ef9")
                 .handleNotificationOpened(notificationOpenedCallback)
                 .endInit();
-              
+                
+              window.plugins.OneSignal.setLogLevel({logLevel: 6, visualLevel: 4});
               // Call syncHashedEmail anywhere in your app if you have the user's email.
               // This improves the effectiveness of OneSignal's "best-time" notification scheduling feature.
               // window.plugins.OneSignal.syncHashedEmail(userEmail);
