@@ -16,10 +16,26 @@
 		3047A5131AB8059700498E2A /* build-release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5101AB8059700498E2A /* build-release.xcconfig */; };
 		3047A5141AB8059700498E2A /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5111AB8059700498E2A /* build.xcconfig */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		339E4F98F35A4F0C8A80791B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F95EB03359C947F7ABA19499 /* SystemConfiguration.framework */; };
-		88A94E96F11D496DA5DC6CFB /* PushbotsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FE752D39304F31ADB4D258 /* PushbotsPlugin.m */; };
-		CAEC0C9134CF44B09D7C8B83 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EE6053CF104C30922399EA /* CoreTelephony.framework */; };
-		60DFFD1AB2944531B6BCB958 /* Pushbots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA842E42E5E24713989C8F64 /* Pushbots.framework */; };
+		C36881CD3C314C9693CF3FFD /* OneSignalPush.h in Resources */ = {isa = PBXBuildFile; fileRef = D94F6E99BD9F45B9BA59C65F /* OneSignalPush.h */; };
+		1492AD4606E34A8F8516986B /* OneSignalSelectorHelpers.h in Resources */ = {isa = PBXBuildFile; fileRef = 444DA35B2B01441FA45B9C36 /* OneSignalSelectorHelpers.h */; };
+		DA0EACF2EFE4432885BB9CBE /* UNUserNotificationCenter+OneSignal.h in Resources */ = {isa = PBXBuildFile; fileRef = B14BCEE15F6F4507B8D61EDE /* UNUserNotificationCenter+OneSignal.h */; };
+		29C699AA3B794CB7A494EF28 /* UIApplicationDelegate+OneSignal.h in Resources */ = {isa = PBXBuildFile; fileRef = 896FAEAD1AAC4111A493C6AF /* UIApplicationDelegate+OneSignal.h */; };
+		5BF8750DA3AD47DCB9D1C958 /* OneSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 65097DC00A6643B7A58A56BB /* OneSignal.m */; };
+		95C6D5F0D07B44F7871BB83A /* OneSignalHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FC8761F19946C89AB0D47F /* OneSignalHTTPClient.m */; };
+		D3D0D8141C334D07892B82FA /* OneSignalTrackIAP.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFFA336ED694C60A843D798 /* OneSignalTrackIAP.m */; };
+		9F87533088F443D090D02D96 /* OneSignalJailbreakDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5E9D3106C54D7EA39952E3 /* OneSignalJailbreakDetection.m */; };
+		7B3BA0B5292347998C00FE6F /* OneSignalReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E0D2083C3E486FB44748E3 /* OneSignalReachability.m */; };
+		2E8164CF035641D6ACB71661 /* OneSignalMobileProvision.m in Sources */ = {isa = PBXBuildFile; fileRef = C284BE8BAB2443A885B34547 /* OneSignalMobileProvision.m */; };
+		CB9E122EFCDD4ACEA5771499 /* OneSignalLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = CF971B07AB78479C8B61E7AB /* OneSignalLocation.m */; };
+		248D656EC20D4CB2A1F29FAE /* OneSignalAlertViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2203E0C260F469C937E9832 /* OneSignalAlertViewDelegate.m */; };
+		49DE5DE48BF448C0B33B5673 /* OneSignalTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B0797E24EE48E6AB962FC2 /* OneSignalTracker.m */; };
+		EA1E07FCA11D4F86AD21C001 /* OneSignalHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B6DF4C13B9438A89B60B54 /* OneSignalHelper.m */; };
+		C79B57FC35E4494E93C0CF7C /* OneSignalWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4488ADBFBAD1425D9D8FA01D /* OneSignalWebView.m */; };
+		E5165DC3F8F24A5BB4E39280 /* OneSignalPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 903B111A388A47D1BCA0FB83 /* OneSignalPush.m */; };
+		12B1FC8271E642CC825619A0 /* OneSignalSelectorHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 34855199F9F2475E81033267 /* OneSignalSelectorHelpers.m */; };
+		E811D39DB8E841EDB3B4B79D /* UNUserNotificationCenter+OneSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0192EEBA695B4E208B3890DE /* UNUserNotificationCenter+OneSignal.m */; };
+		49C1AF0438654477BAFE1BA8 /* UIApplicationDelegate+OneSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F093F92DEB4BE5B9E65AC4 /* UIApplicationDelegate+OneSignal.m */; };
+		D56ACE101FF746DC92E38485 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FBC5B037F5D41B39F5581BE /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,11 +76,38 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "misvivoapp/config.xml"; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		F95EB03359C947F7ABA19499 /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		85FE752D39304F31ADB4D258 /* PushbotsPlugin.m */ = {isa = PBXFileReference; name = "PushbotsPlugin.m"; path = "pushbots-cordova-plugin/PushbotsPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		0606C1B4FA754A5FAC7620BE /* PushbotsPlugin.h */ = {isa = PBXFileReference; name = "PushbotsPlugin.h"; path = "pushbots-cordova-plugin/PushbotsPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		81EE6053CF104C30922399EA /* CoreTelephony.framework */ = {isa = PBXFileReference; name = "CoreTelephony.framework"; path = "System/Library/Frameworks/CoreTelephony.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		AA842E42E5E24713989C8F64 /* Pushbots.framework */ = {isa = PBXFileReference; name = "Pushbots.framework"; path = "misvivoapp/Plugins/pushbots-cordova-plugin/Pushbots.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		D94F6E99BD9F45B9BA59C65F /* OneSignalPush.h */ = {isa = PBXFileReference; name = "OneSignalPush.h"; path = "onesignal-cordova-plugin/OneSignalPush.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		444DA35B2B01441FA45B9C36 /* OneSignalSelectorHelpers.h */ = {isa = PBXFileReference; name = "OneSignalSelectorHelpers.h"; path = "onesignal-cordova-plugin/OneSignalSelectorHelpers.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B14BCEE15F6F4507B8D61EDE /* UNUserNotificationCenter+OneSignal.h */ = {isa = PBXFileReference; name = "UNUserNotificationCenter+OneSignal.h"; path = "onesignal-cordova-plugin/UNUserNotificationCenter+OneSignal.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		896FAEAD1AAC4111A493C6AF /* UIApplicationDelegate+OneSignal.h */ = {isa = PBXFileReference; name = "UIApplicationDelegate+OneSignal.h"; path = "onesignal-cordova-plugin/UIApplicationDelegate+OneSignal.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		65097DC00A6643B7A58A56BB /* OneSignal.m */ = {isa = PBXFileReference; name = "OneSignal.m"; path = "onesignal-cordova-plugin/OneSignal.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		05FC8761F19946C89AB0D47F /* OneSignalHTTPClient.m */ = {isa = PBXFileReference; name = "OneSignalHTTPClient.m"; path = "onesignal-cordova-plugin/OneSignalHTTPClient.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		2EFFA336ED694C60A843D798 /* OneSignalTrackIAP.m */ = {isa = PBXFileReference; name = "OneSignalTrackIAP.m"; path = "onesignal-cordova-plugin/OneSignalTrackIAP.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		8A5E9D3106C54D7EA39952E3 /* OneSignalJailbreakDetection.m */ = {isa = PBXFileReference; name = "OneSignalJailbreakDetection.m"; path = "onesignal-cordova-plugin/OneSignalJailbreakDetection.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		64E0D2083C3E486FB44748E3 /* OneSignalReachability.m */ = {isa = PBXFileReference; name = "OneSignalReachability.m"; path = "onesignal-cordova-plugin/OneSignalReachability.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		C284BE8BAB2443A885B34547 /* OneSignalMobileProvision.m */ = {isa = PBXFileReference; name = "OneSignalMobileProvision.m"; path = "onesignal-cordova-plugin/OneSignalMobileProvision.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		CF971B07AB78479C8B61E7AB /* OneSignalLocation.m */ = {isa = PBXFileReference; name = "OneSignalLocation.m"; path = "onesignal-cordova-plugin/OneSignalLocation.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		E2203E0C260F469C937E9832 /* OneSignalAlertViewDelegate.m */ = {isa = PBXFileReference; name = "OneSignalAlertViewDelegate.m"; path = "onesignal-cordova-plugin/OneSignalAlertViewDelegate.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		C2B0797E24EE48E6AB962FC2 /* OneSignalTracker.m */ = {isa = PBXFileReference; name = "OneSignalTracker.m"; path = "onesignal-cordova-plugin/OneSignalTracker.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		D2B6DF4C13B9438A89B60B54 /* OneSignalHelper.m */ = {isa = PBXFileReference; name = "OneSignalHelper.m"; path = "onesignal-cordova-plugin/OneSignalHelper.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		4488ADBFBAD1425D9D8FA01D /* OneSignalWebView.m */ = {isa = PBXFileReference; name = "OneSignalWebView.m"; path = "onesignal-cordova-plugin/OneSignalWebView.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		903B111A388A47D1BCA0FB83 /* OneSignalPush.m */ = {isa = PBXFileReference; name = "OneSignalPush.m"; path = "onesignal-cordova-plugin/OneSignalPush.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		34855199F9F2475E81033267 /* OneSignalSelectorHelpers.m */ = {isa = PBXFileReference; name = "OneSignalSelectorHelpers.m"; path = "onesignal-cordova-plugin/OneSignalSelectorHelpers.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		0192EEBA695B4E208B3890DE /* UNUserNotificationCenter+OneSignal.m */ = {isa = PBXFileReference; name = "UNUserNotificationCenter+OneSignal.m"; path = "onesignal-cordova-plugin/UNUserNotificationCenter+OneSignal.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		43F093F92DEB4BE5B9E65AC4 /* UIApplicationDelegate+OneSignal.m */ = {isa = PBXFileReference; name = "UIApplicationDelegate+OneSignal.m"; path = "onesignal-cordova-plugin/UIApplicationDelegate+OneSignal.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		B5E4E91F997F412283144450 /* OneSignal.h */ = {isa = PBXFileReference; name = "OneSignal.h"; path = "onesignal-cordova-plugin/OneSignal.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		37F08C95800B4F6B8E212E1A /* OneSignalHTTPClient.h */ = {isa = PBXFileReference; name = "OneSignalHTTPClient.h"; path = "onesignal-cordova-plugin/OneSignalHTTPClient.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D796549389B54FE98B4FA473 /* OneSignalTrackIAP.h */ = {isa = PBXFileReference; name = "OneSignalTrackIAP.h"; path = "onesignal-cordova-plugin/OneSignalTrackIAP.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5A76C88735AD4F7FBBF4B9CC /* OneSignalJailbreakDetection.h */ = {isa = PBXFileReference; name = "OneSignalJailbreakDetection.h"; path = "onesignal-cordova-plugin/OneSignalJailbreakDetection.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		466113301B7A438EA9CEE592 /* OneSignalReachability.h */ = {isa = PBXFileReference; name = "OneSignalReachability.h"; path = "onesignal-cordova-plugin/OneSignalReachability.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		8043421655934A21994D2822 /* OneSignalMobileProvision.h */ = {isa = PBXFileReference; name = "OneSignalMobileProvision.h"; path = "onesignal-cordova-plugin/OneSignalMobileProvision.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		61E9698664084A95AFCD9E5D /* OneSignalLocation.h */ = {isa = PBXFileReference; name = "OneSignalLocation.h"; path = "onesignal-cordova-plugin/OneSignalLocation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F5BCCFED7A96471188BB44C4 /* OneSignalAlertViewDelegate.h */ = {isa = PBXFileReference; name = "OneSignalAlertViewDelegate.h"; path = "onesignal-cordova-plugin/OneSignalAlertViewDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0E33887ADD164A129975FCD4 /* OneSignalHelper.h */ = {isa = PBXFileReference; name = "OneSignalHelper.h"; path = "onesignal-cordova-plugin/OneSignalHelper.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		97F8D239B04645CC9A910DA6 /* OneSignalTracker.h */ = {isa = PBXFileReference; name = "OneSignalTracker.h"; path = "onesignal-cordova-plugin/OneSignalTracker.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E8890E827FF64FE2B5243059 /* OneSignalWebView.h */ = {isa = PBXFileReference; name = "OneSignalWebView.h"; path = "onesignal-cordova-plugin/OneSignalWebView.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		32521D77F3034130B5210433 /* OneSignal-Prefix.pch */ = {isa = PBXFileReference; name = "OneSignal-Prefix.pch"; path = "onesignal-cordova-plugin/OneSignal-Prefix.pch"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5FBC5B037F5D41B39F5581BE /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +116,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
-				339E4F98F35A4F0C8A80791B /* SystemConfiguration.framework in Frameworks */,
-				CAEC0C9134CF44B09D7C8B83 /* CoreTelephony.framework in Frameworks */,
-				60DFFD1AB2944531B6BCB958 /* Pushbots.framework in Frameworks */,
+				D56ACE101FF746DC92E38485 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,9 +187,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F95EB03359C947F7ABA19499 /* SystemConfiguration.framework */,
-				81EE6053CF104C30922399EA /* CoreTelephony.framework */,
-				AA842E42E5E24713989C8F64 /* Pushbots.framework */,
+				5FBC5B037F5D41B39F5581BE /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -174,8 +213,37 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				85FE752D39304F31ADB4D258 /* PushbotsPlugin.m */,
-				0606C1B4FA754A5FAC7620BE /* PushbotsPlugin.h */,
+				D94F6E99BD9F45B9BA59C65F /* OneSignalPush.h */,
+				444DA35B2B01441FA45B9C36 /* OneSignalSelectorHelpers.h */,
+				B14BCEE15F6F4507B8D61EDE /* UNUserNotificationCenter+OneSignal.h */,
+				896FAEAD1AAC4111A493C6AF /* UIApplicationDelegate+OneSignal.h */,
+				65097DC00A6643B7A58A56BB /* OneSignal.m */,
+				05FC8761F19946C89AB0D47F /* OneSignalHTTPClient.m */,
+				2EFFA336ED694C60A843D798 /* OneSignalTrackIAP.m */,
+				8A5E9D3106C54D7EA39952E3 /* OneSignalJailbreakDetection.m */,
+				64E0D2083C3E486FB44748E3 /* OneSignalReachability.m */,
+				C284BE8BAB2443A885B34547 /* OneSignalMobileProvision.m */,
+				CF971B07AB78479C8B61E7AB /* OneSignalLocation.m */,
+				E2203E0C260F469C937E9832 /* OneSignalAlertViewDelegate.m */,
+				C2B0797E24EE48E6AB962FC2 /* OneSignalTracker.m */,
+				D2B6DF4C13B9438A89B60B54 /* OneSignalHelper.m */,
+				4488ADBFBAD1425D9D8FA01D /* OneSignalWebView.m */,
+				903B111A388A47D1BCA0FB83 /* OneSignalPush.m */,
+				34855199F9F2475E81033267 /* OneSignalSelectorHelpers.m */,
+				0192EEBA695B4E208B3890DE /* UNUserNotificationCenter+OneSignal.m */,
+				43F093F92DEB4BE5B9E65AC4 /* UIApplicationDelegate+OneSignal.m */,
+				B5E4E91F997F412283144450 /* OneSignal.h */,
+				37F08C95800B4F6B8E212E1A /* OneSignalHTTPClient.h */,
+				D796549389B54FE98B4FA473 /* OneSignalTrackIAP.h */,
+				5A76C88735AD4F7FBBF4B9CC /* OneSignalJailbreakDetection.h */,
+				466113301B7A438EA9CEE592 /* OneSignalReachability.h */,
+				8043421655934A21994D2822 /* OneSignalMobileProvision.h */,
+				61E9698664084A95AFCD9E5D /* OneSignalLocation.h */,
+				F5BCCFED7A96471188BB44C4 /* OneSignalAlertViewDelegate.h */,
+				0E33887ADD164A129975FCD4 /* OneSignalHelper.h */,
+				97F8D239B04645CC9A910DA6 /* OneSignalTracker.h */,
+				E8890E827FF64FE2B5243059 /* OneSignalWebView.h */,
+				32521D77F3034130B5210433 /* OneSignal-Prefix.pch */,
 			);
 			name = Plugins;
 			path = "misvivoapp/Plugins";
@@ -288,7 +356,25 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				88A94E96F11D496DA5DC6CFB /* PushbotsPlugin.m in Sources */,
+				C36881CD3C314C9693CF3FFD /* OneSignalPush.h in Resources */,
+				1492AD4606E34A8F8516986B /* OneSignalSelectorHelpers.h in Resources */,
+				DA0EACF2EFE4432885BB9CBE /* UNUserNotificationCenter+OneSignal.h in Resources */,
+				29C699AA3B794CB7A494EF28 /* UIApplicationDelegate+OneSignal.h in Resources */,
+				5BF8750DA3AD47DCB9D1C958 /* OneSignal.m in Sources */,
+				95C6D5F0D07B44F7871BB83A /* OneSignalHTTPClient.m in Sources */,
+				D3D0D8141C334D07892B82FA /* OneSignalTrackIAP.m in Sources */,
+				9F87533088F443D090D02D96 /* OneSignalJailbreakDetection.m in Sources */,
+				7B3BA0B5292347998C00FE6F /* OneSignalReachability.m in Sources */,
+				2E8164CF035641D6ACB71661 /* OneSignalMobileProvision.m in Sources */,
+				CB9E122EFCDD4ACEA5771499 /* OneSignalLocation.m in Sources */,
+				248D656EC20D4CB2A1F29FAE /* OneSignalAlertViewDelegate.m in Sources */,
+				49DE5DE48BF448C0B33B5673 /* OneSignalTracker.m in Sources */,
+				EA1E07FCA11D4F86AD21C001 /* OneSignalHelper.m in Sources */,
+				C79B57FC35E4494E93C0CF7C /* OneSignalWebView.m in Sources */,
+				E5165DC3F8F24A5BB4E39280 /* OneSignalPush.m in Sources */,
+				12B1FC8271E642CC825619A0 /* OneSignalSelectorHelpers.m in Sources */,
+				E811D39DB8E841EDB3B4B79D /* UNUserNotificationCenter+OneSignal.m in Sources */,
+				49C1AF0438654477BAFE1BA8 /* UIApplicationDelegate+OneSignal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -37,36 +37,26 @@
     </head>
     <body>
         <script type="text/javascript">
-            document.addEventListener('deviceready', function () {
-                window.plugins.PushbotsPlugin.initialize("58b224994a9efaa2118b4567", {"android":{"sender_id":"123456789456789"}});
+            
+                //d0f05d09-264b-4a17-8c72-f517191b01cb
+                document.addEventListener('deviceready', function () {
+                  // Enable to debug issues.
+                  // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
+                  
+                  var notificationOpenedCallback = function(jsonData) {
+                    console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+                  };
 
-                // Should be called once app receive the notification only while the application is open or in background
-            window.plugins.PushbotsPlugin.on("notification:received", function(data){
-                alert("received:" + JSON.stringify(data));
-                
-                //Silent notifications Only [iOS only]
-                //Send CompletionHandler signal with PushBots notification Id
-                window.plugins.PushbotsPlugin.done(data.pb_n_id);
-            });
+                  window.plugins.OneSignal
+                    .startInit("d0f05d09-264b-4a17-8c72-f517191b01cb")
+                    .handleNotificationOpened(notificationOpenedCallback)
+                    .endInit();
+                  
+                  // Call syncHashedEmail anywhere in your app if you have the user's email.
+                  // This improves the effectiveness of OneSignal's "best-time" notification scheduling feature.
+                  // window.plugins.OneSignal.syncHashedEmail(userEmail);
+                }, false);
 
-            // Should be called once the notification is clicked
-            window.plugins.PushbotsPlugin.on("notification:clicked", function(data){
-                alert("clicked:" + JSON.stringify(data));
-            });
-
-            // Should be called once the device is registered successfully with Apple or Google servers
-            window.plugins.PushbotsPlugin.on("registered", function(token){
-                alert(token);
-            });
-
-            //Get device token
-            window.plugins.PushbotsPlugin.getRegistrationId(function(token){
-                alert("Registration Id:" + token);
-            });
-
-
-
-            }, false);
         </script>
         <div class="app">
             <h1>Apache Cordova</h1>
