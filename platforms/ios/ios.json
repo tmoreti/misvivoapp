@@ -9,7 +9,7 @@
                 "parents": {
                     "/*": [
                         {
-                            "xml": "<feature name=\"OneSignalPush\"><param name=\"ios-package\" value=\"OneSignalPush\" /></feature>",
+                            "xml": "<feature name=\"PushbotsPlugin\"><param name=\"ios-package\" value=\"PushbotsPlugin\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -17,57 +17,42 @@
             },
             "*-Info.plist": {
                 "parents": {
-                    "UIBackgroundModes": [
-                        {
-                            "xml": "<array><string>remote-notification</string></array>",
-                            "count": 1
-                        }
-                    ]
+                    "UIBackgroundModes": []
                 }
             },
             "*-Debug.plist": {
                 "parents": {
-                    "aps-environment": [
-                        {
-                            "xml": "<string>development</string>",
-                            "count": 1
-                        }
-                    ]
+                    "aps-environment": []
                 }
             },
             "*-Release.plist": {
                 "parents": {
-                    "aps-environment": [
-                        {
-                            "xml": "<string>production</string>",
-                            "count": 1
-                        }
-                    ]
+                    "aps-environment": []
                 }
             }
         }
     },
     "installed_plugins": {
-        "onesignal-cordova-plugin": {
-            "PACKAGE_NAME": "br.com.misvivoapp"
-        },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "br.com.misvivoapp"
+        },
+        "pushbots-cordova-plugin": {
+            "PACKAGE_NAME": "br.com.misvivoapp.misvivoapp"
         }
     },
     "dependent_plugins": {},
     "modules": [
         {
-            "id": "onesignal-cordova-plugin.OneSignal",
-            "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
-            "pluginId": "onesignal-cordova-plugin",
+            "id": "pushbots-cordova-plugin.PushbotsPlugin",
+            "file": "plugins/pushbots-cordova-plugin/www/pushbots.js",
+            "pluginId": "pushbots-cordova-plugin",
             "clobbers": [
-                "OneSignal"
+                "PushbotsPlugin"
             ]
         }
     ],
     "plugin_metadata": {
-        "onesignal-cordova-plugin": "2.0.11",
-        "cordova-plugin-whitelist": "1.3.1"
+        "cordova-plugin-whitelist": "1.3.1",
+        "pushbots-cordova-plugin": "1.4.3"
     }
 }

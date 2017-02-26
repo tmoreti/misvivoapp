@@ -10,7 +10,7 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "br.com.misvivoapp.misvivoapp"
         },
-        "onesignal-cordova-plugin": {
+        "pushbots-cordova-plugin": {
             "PACKAGE_NAME": "br.com.misvivoapp.misvivoapp"
         }
     },
