@@ -26,9 +26,6 @@
         Apache Cordova Team
     </author>
     <content src="index.html" />
-    <vs:features>
-        <vs:feature>onesignal-cordova-plugin</vs:feature>
-    </vs:features>
     <gap:plugin name="pushbots-cordova-plugin" source="npm" spec="^1.4.0" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
