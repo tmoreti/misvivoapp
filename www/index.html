@@ -36,13 +36,14 @@
         <title>Hello World</title>
     </head>
     <body>
+        hello world
         <script type="text/javascript">
             
                 //d0f05d09-264b-4a17-8c72-f517191b01cb
-                document.addEventListener('deviceready', function () {
+         document.addEventListener('deviceready', function () {
                   // Enable to debug issues.
                   // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
-                  
+                                   alert('oi');
                   var notificationOpenedCallback = function(jsonData) {
                     console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
                   };
@@ -52,10 +53,12 @@
                     .handleNotificationOpened(notificationOpenedCallback)
                     .endInit();
                   
+                                   
+                    window.plugins.OneSignal.setLogLevel({logLevel: 6, visualLevel: 4});
                   // Call syncHashedEmail anywhere in your app if you have the user's email.
                   // This improves the effectiveness of OneSignal's "best-time" notification scheduling feature.
                   // window.plugins.OneSignal.syncHashedEmail(userEmail);
-                }, false);
+        }, false);
 
         </script>
         <div class="app">
